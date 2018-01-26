@@ -30,6 +30,7 @@ RSpec.configure do |config|
   end
 
   config.include UnitTests::Matchers
+  config.include Shoulda::Matchers::WordWrap
 
   config.infer_spec_type_from_file_location!
   config.example_status_persistence_file_path = "spec/examples.txt"
